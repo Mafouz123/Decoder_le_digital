@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Article 2 - Décoder le digital</title>
+
+  <style>
+    :root {
+      --clr-bg1: rgb(0,112,243);
+      --clr-bg2: rgb(0,198,255);
+      --clr-overlay: rgba(255,255,255,0.9);
+      --clr-text: rgb(28,28,28);
+      --clr-accent: rgb(255,221,87);
+      --clr-muted: #6c757d;
+      --font-body: 'Inter', sans-serif;
+    }
+
+    body {
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.7;
+      background: linear-gradient(135deg, var(--clr-bg1), var(--clr-bg2));
+      color: var(--clr-text);
+      padding-top: 80px;
+    }
+
+    .section {
+      background: var(--clr-overlay);
+      border-radius: 12px;
+      padding: 40px 20px;
+      margin: 20px auto;
+      max-width: 900px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .article-image {
+      width: 100%;
+      margin: 20px 0;
+      border-radius: 8px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+
+    .header {
+      background: var(--clr-overlay);
+      backdrop-filter: blur(6px);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    .nav-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .logo img {
+      height: 40px;
+      width: auto;
+      display: block;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      margin-left: auto;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--clr-text);
+      font-weight: 600;
+      padding: 6px 8px;
+      border-radius: 6px;
+      transition: background-color 0.3s;
+      white-space: nowrap;
+    }
+
+    .nav-links a:hover {
+      background-color: var(--clr-accent);
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ✅ Header ajouté -->
+  <header class="header">
+    <div class="container">
+      <nav class="nav-bar">
+        <div class="logo">
+          <a href="index.html"><img src="img/logo.JPG" alt="Logo Décoder le digital"></a>
+        </div>
+        <div class="nav-links">
+          <a href="index.html">Accueil</a>
+          <a href="article-1.html">Articles</a>
+          <a href="about.html">À Propos</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ✅ Contenu principal -->
+  <main class="main-content">
+    <article class="section">
+
+      <h2>L'IA en 30 minutes par jour : Les 3 automatisations simples qui vont vous faire gagner 10 heures par semaine (sans coder)</h2>
+
+      <h3>🎣 Introduction : L'IA est (déjà) votre collègue invisible</h3>
+      <p>Imaginez pouvoir vous libérer de 10 heures de travail répétitif chaque semaine. Ce n'est plus de la science-fiction. C'est l'Intelligence Artificielle.</p>
+      <p>Trop de professionnels pensent que l'IA est réservée aux data scientists ou aux entreprises qui peuvent investir des sommes astronomiques. C'est une erreur. L'IA est déjà l'assistant le plus puissant et le moins cher que vous n'avez jamais recruté.</p>
+      <p>Chez <strong>Décoder le digital</strong>, nous mettons fin au jargon. Dans cet article, nous allons passer outre les termes complexes (Machine Learning, Deep Learning, etc.) pour nous concentrer sur l'essentiel : trois applications d'IA concrètes et souvent gratuites que vous pouvez configurer en moins de 30 minutes par jour pour transformer votre productivité.</p>
+      <p>Prêt à récupérer votre temps ? Commençons par décoder ce qu'est réellement l'IA pour le professionnel.</p>
+      <img src="img/img-introduction.JPG" alt="Image introduction IA" class="article-image" />
+
+      <h3>I. 🧠 Décoder l'IA : Oubliez la science-fiction, pensez "assistant ultra-rapide"</h3>
+      <p>Avant de passer à l'action, une minute de clarté. L'IA, pour le professionnel, n'est pas un robot menaçant. C'est simplement un logiciel capable d'apprendre et d'exécuter des tâches cognitives (écrire, classer, résumer) à une vitesse et une échelle que l'humain ne peut égaler.</p>
+      <p><strong>Leçon clé :</strong> L'IA ne vise pas à remplacer l'humain. Elle est conçue pour l'augmenter. Son rôle est de prendre en charge les tâches de "brouillon" pour que vous puissiez vous concentrer sur la stratégie et la prise de décision (votre vraie valeur ajoutée).</p>
+      <img src="img/img-collaboration 2.JPG" alt="Collaboration Humain-Robot" class="article-image" />
+
+      <h3>II. 🛠️ Vos 3 Automatisations Simples pour 10 Heures Gagnées</h3>
+      <p>Voici les trois zones de gains rapides, chacune utilisant des outils accessibles pour transformer votre routine.</p>
+
+      <h4>Automatisation n°1 : La Synthèse Intelligente – Gagnez 3h/semaine</h4>
+      <table>
+        <tr><th>Problème</th><td>Fatigue informationnelle (longs rapports, emails fleuves, réunions)</td></tr>
+        <tr><th>Outils suggérés</th><td><a href="https://chat.openai.com/">ChatGPT</a> ou <a href="https://gemini.google.com/">Gemini</a></td></tr>
+        <tr><th>Action en 5 min</th><td>Uploadez un texte ou transcription et demandez : "Résume en 3 points majeurs + 2 actions."</td></tr>
+        <tr><th>Pourquoi ça marche</th><td>Vous lisez directement la conclusion et l'étape suivante, gain de temps précieux.</td></tr>
+      </table>
+      <img src="img/img-synthese.JPG" alt="Synthèse d'information" class="article-image" />
+
+      <h4>Automatisation n°2 : Le Générateur de Contenu "Draft" – Gagnez 5h/semaine</h4>
+      <table>
+        <tr><th>Problème</th><td>Blocage de la page blanche (emails, descriptions, messages)</td></tr>
+        <tr><th>Outils suggérés</th><td><a href="https://chat.openai.com/">ChatGPT</a> ou <a href="https://gemini.google.com/">Gemini</a></td></tr>
+        <tr><th>Action en 5 min</th><td>PROMPT en 3 phrases : (1) Rôle : expert marketing. (2) Tâche : rédige un email froid. (3) Format : 5 lignes max pour PME.</td></tr>
+        <tr><th>Pourquoi ça marche</th><td>Vous ne perdez plus d’énergie à démarrer. Vous ajustez seulement les derniers 20%.</td></tr>
+      </table>
+      <img src="img/img-generation-contenu.JPG" alt="Génération de contenu" class="article-image" />
+
+      <h4>Automatisation n°3 : Le Nettoyage et la Classification – Gagnez 2h/semaine</h4>
+      <table>
+        <tr><th>Problème</th><td>Organisation et classement (emails, prospects)</td></tr>
+        <tr><th>Outils suggérés</th><td><a href="https://docs.google.com/spreadsheets/">Google Sheets</a> ou <a href="https://zapier.com/">Zapier</a></td></tr>
+        <tr><th>Action en 5 min</th><td>Demandez : "Classe cette colonne de 200 prospects en 'Chaud', 'Froid', 'À Relancer'." Ou créez une règle Zapier pour emails.</td></tr>
+        <tr><th>Pourquoi ça marche</th><td>L’IA structure vos données, transformant des informations brutes en intelligence stratégique.</td></tr>
+      </table>
+      <img src="img/img-classification .JPG" alt="Classification de données" class="article-image" />
+
+      <h3>III. 🚀 Le Décollage : Votre Plan pour Récupérer 10 Heures</h3>
+      <p>Vous avez maintenant la feuille de route. Mais l'adoption d'un nouvel outil est souvent le point de blocage.</p>
+      <p><strong>🔑 Notre Conseil :</strong> Commencez par la tâche la plus détestée. Ne cherchez pas à automatiser toutes les 3 tâches en même temps. Choisissez celle que vous détestez le plus et engagez-vous à y consacrer 30 minutes aujourd'hui pour mettre en place l'outil. Le simple plaisir de ne plus faire cette tâche sera la motivation pour le reste.</p>
+      <p>L'IA n'est pas une complexité, c'est une opportunité offerte à tous pour se concentrer sur ce qui compte vraiment.</p>
+
+      <h3>✅ Appel à l'Action</h3>
+      <p>Quelle est la première tâche (synthèse, rédaction ou classification) que vous allez confier à votre nouvel assistant IA ?</p>
+      <p>Partagez l'outil ou la tâche que vous allez tester en commentaire ! Votre succès est notre mission !</p>
+
+    </article>
+  </main>
+
+</body>
+</html>
