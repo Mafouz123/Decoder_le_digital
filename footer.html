@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Footer - Décoder le digital</title>
+
+  <style>
+    :root {
+      --clr-bg1: rgb(0,112,243);   /* bleu vif */
+      --clr-bg2: rgb(0,198,255);   /* cyan lumineux */
+      --clr-overlay: rgba(255,255,255,0.9); /* couche blanche translucide */
+      --clr-text: rgb(28,28,28);   /* gris foncé */
+      --clr-accent: rgb(255,221,87); /* jaune doré */
+      --clr-muted: #6c757d;
+      --font-body: 'Inter', sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.6;
+      background: linear-gradient(135deg, var(--clr-bg1), var(--clr-bg2));
+      color: var(--clr-text);
+    }
+
+    /* ✅ Footer design */
+    .footer {
+      background-color: var(--clr-overlay);
+      backdrop-filter: blur(6px);
+      padding: 30px 0;
+      text-align: center;
+      font-size: 0.95em;
+      color: var(--clr-muted);
+      margin-top: 40px;
+      box-shadow: 0 -2px 6px rgba(0,0,0,0.1);
+      animation: fadeUp 0.8s ease-out;
+    }
+
+    .footer-links a {
+      color: var(--clr-muted);
+      margin: 0 10px;
+      font-weight: 500;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .footer-links a:hover {
+      color: var(--clr-accent);
+    }
+
+    /* ✅ Animation */
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ✅ Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; 2025 Décoder le digital. Tous droits réservés.</p>
+      <div class="footer-links">
+        <a href="contact.html">Contact</a> |
+        <a href="about.html">À Propos</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
