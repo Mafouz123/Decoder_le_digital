@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Article 3 - Décoder le digital</title>
+
+  <style>
+    :root {
+      --clr-bg1: rgb(0,112,243);
+      --clr-bg2: rgb(0,198,255);
+      --clr-overlay: rgba(255,255,255,0.9);
+      --clr-text: rgb(28,28,28);
+      --clr-accent: rgb(255,221,87);
+      --clr-muted: #6c757d;
+      --font-body: 'Inter', sans-serif;
+    }
+
+    body {
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.7;
+      background: linear-gradient(135deg, var(--clr-bg1), var(--clr-bg2));
+      color: var(--clr-text);
+      padding-top: 80px;
+      margin: 0;
+    }
+
+    .section {
+      background: var(--clr-overlay);
+      border-radius: 12px;
+      padding: 40px 20px;
+      margin: 20px auto;
+      max-width: 900px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .article-image {
+      width: 100%;
+      margin: 20px 0;
+      border-radius: 8px;
+    }
+
+    .header {
+      background: var(--clr-overlay);
+      backdrop-filter: blur(6px);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    .nav-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .logo img {
+      height: 40px;
+      width: auto;
+      display: block;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      margin-left: auto;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--clr-text);
+      font-weight: 600;
+      padding: 6px 8px;
+      border-radius: 6px;
+      transition: background-color 0.3s;
+      white-space: nowrap;
+    }
+
+    .nav-links a:hover {
+      background-color: var(--clr-accent);
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ✅ Header -->
+  <header class="header">
+    <div class="container">
+      <nav class="nav-bar">
+        <div class="logo">
+          <a href="index.html"><img src="img/logo.png" alt="Logo Décoder le digital"></a>
+        </div>
+        <div class="nav-links">
+          <a href="index.html">Accueil</a>
+          <a href="article-1.html">Articles</a>
+          <a href="about.html">À Propos</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ✅ Contenu principal -->
+  <main class="main-content">
+    <article class="section">
+
+      <h2>Vibe Coding : Quand l'IA donne le « La » de la Programmation</h2>
+      <img src="img/vibe-coding-intro.jpg" alt="Illustration Vibe Coding" class="article-image" />
+
+      <h3>✨ Le Vibe Coding, c'est quoi ? Une Révolution du "Ressenti"</h3>
+      <p>
+        Oubliez la tête baissée dans le code, les nuits passées à traquer une virgule manquante. 
+        Le Vibe Coding (ou Codage par Ambiance) est la nouvelle approche qui bouscule le monde du développement logiciel.
+      </p>
+      <p>
+        Né de l'essor des grands modèles de langage (LLM) comme Gemini Code Assist, GitHub Copilot ou Cursor, 
+        ce terme, popularisé par des experts comme Andrej Karpathy, décrit une méthode où l'on décrit le résultat souhaité en langage naturel pour que l'IA génère le code fonctionnel.
+      </p>
+      <p>
+        Le développeur passe du rôle d'artisan de la syntaxe à celui d'architecte de l'intention. 
+        On ne se demande plus comment écrire le code, mais plutôt quelle ambiance l'application doit dégager, quelle fonctionnalité elle doit offrir. 
+        C'est l'ère de la programmation au "feeling" (vibe), où l'intuition guide la création.
+      </p>
+      <img src="img/vibe-coding-revolution.jpg" alt="Révolution du Vibe Coding" class="article-image" />
+
+      <h3>🚀 Les Promesses : Vitesse, Créativité et Accessibilité</h3>
+      <ul>
+        <li><strong>Vitesse de Prototypage Accrue :</strong> Une idée le matin ? Un prototype fonctionnel le soir. L'IA gère les tâches répétitives, le boilerplate et les intégrations de base en quelques secondes.</li>
+        <li><strong>Démocratisation :</strong> Plus besoin d'être un ingénieur full-stack chevronné pour créer une application. Les novices peuvent décrire leur vision et voir l'IA la concrétiser.</li>
+        <li><strong>Fluidité et Créativité :</strong> En se libérant de la charge mentale de la syntaxe, le développeur peut se concentrer sur l'architecture globale, la logique métier et l'innovation.</li>
+      </ul>
+
+      <h3>⚠️ Les Zones d'Ombre : Attention au "Trust but Don't Verify"</h3>
+      <ol>
+        <li><strong>Qualité et Maintenabilité du Code :</strong> Un code généré par IA fonctionne souvent, mais est-il optimisé, bien structuré et facile à maintenir ?</li>
+        <li><strong>Sécurité :</strong> L'IA peut introduire par inadvertance des failles de sécurité dans le code généré. Une expertise humaine reste cruciale.</li>
+        <li><strong>L'illusion de la Facilité :</strong> Le Vibe Coding ne remplace pas l'expertise. Une solide compréhension des fondamentaux reste indispensable.</li>
+      </ol>
+      <p>Le Challenge : Il faut trouver un équilibre entre la créativité intuitive de l'IA et la rigueur technique de l'humain.</p>
+      <img src="img/vibe-coding-challenges.jpg" alt="Défis du Vibe Coding" class="article-image" />
+
+      <h3>Le Nouveau Rôle du Développeur : Architecte des "Vibes"</h3>
+      <p>
+        Le Vibe Coding n'est pas là pour remplacer les développeurs, mais pour redéfinir leur rôle.
+        Les développeurs deviennent des "orchestrateurs du code". Leur valeur ne réside plus dans la rapidité de frappe des lignes, mais dans :
+      </p>
+      <ul>
+        <li>La formulation de prompts précis et efficaces.</li>
+        <li>L'audit critique et la validation du code généré.</li>
+        <li>La conception d'architectures logicielles robustes.</li>
+      </ul>
+      <p>
+        Le succès en Vibe Coding passera par une approche hybride : utiliser l'IA pour la vélocité et les tâches répétitives, 
+        tout en conservant l'expertise humaine pour la qualité, la sécurité et la vision globale.
+      </p>
+      <p>
+        Le Vibe Coding est plus qu'une tendance, c'est un changement de paradigme. 
+        Il reste aux professionnels de la tech de l'apprivoiser pour en faire un levier d'innovation, et non un piège de la superficialité.
+      </p>
+      <img src="img/vibe-coding-developer-role.jpg" alt="Rôle du développeur en Vibe Coding" class="article-image" />
+
+    </article>
+  </main>
+
+</body>
+</html>
